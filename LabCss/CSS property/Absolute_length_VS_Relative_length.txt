@@ -1,0 +1,5 @@
+ให้หาความแตกต่างเวลาเราเลือกใช้ CSS unit หรือ value ระหว่าง Absolute length กับ Relative length
+
+
+= Relative Length เป็นการกำหนดค่าแบบอัตราส่วนทำให้การใช้บนหน้าจอยืดหยุ่นกว่า
+ส่วน Absolute Length เป็นการกำหนดค่าแบบตายตัว
