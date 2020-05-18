@@ -18,7 +18,13 @@ class UserTemplate {
     }
 
     checkStatus() {
-        console.log('your login status :', this.connected)
+
+        if(this.connected){
+            console.log('your login')
+
+        }else{
+            console.log('your not login')
+        }
     }
 
 
