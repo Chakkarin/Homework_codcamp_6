@@ -3,6 +3,7 @@ CodeCamp 6
 Chakkarin Yinghan
 
 # Homework #1 
+>> https://chakkarin.github.io/hw1/index.html
 
 1. สร้างหน้า index.html เป็น homepage 
 - มีภาพที่แสดงความเป็นตัวเอง และ motto ประจำตัว
