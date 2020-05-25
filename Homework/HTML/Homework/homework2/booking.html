@@ -8,46 +8,78 @@
 </head>
 
 <body>
-    <form action="#">
-        <div class="container" style="display: flex;">
-            <div class="formGroup" style="margin: 2%;">
-                <label for="fname">First name:</label><br />
-                <input type="text" id="fname" name="fname" value="John">
+    <style>
+        .container {
+            display: flex;
+            flex-flow: wrap;
+        }
+        
+        .card {
+            flex: 1;
+            /* padding: 2rem; */
+            /* border: 1px solid rgb(210, 210, 210); */
+            /* margin-right: 1rem; */
+            margin-top: 1rem;
+        }
+    </style>
+
+    <form action="#" style="width: 50%;">
+        <div class="container">
+            <div class="card">
+                <label for="flying">Flying from</label><br />
+                <select name="flying" id="flying" style="width: 50%;">
+                    <option value="KarachaiPakist" selected>Karachai, Pakist</option>
+                    <option value="KarachaiPakist1">Karachai, Pakist1</option>
+                    <option value="KarachaiPakist2">Karachai, Pakist2</option>
+                    <option value="KarachaiPakist3">Karachai, Pakist3</option>
+                </select>
             </div>
-            <div class="formGroup" style="margin: 2%;">
-                <label for="lname">Last name:</label><br />
-                <input type="text" id="lname" name="lname" value="Doe">
-            </div>
-        </div>
-        <div class="container" style="display: flex;">
-            <div class="formGroup" style="margin: 2%;">
-                <label for="fname">First name:</label><br />
-                <input type="text" id="fname" name="fname" value="John">
-            </div>
-            <div class="formGroup" style="margin: 2%;">
-                <label for="lname">Last name:</label><br />
-                <input type="text" id="lname" name="lname" value="Doe">
-            </div>
-        </div>
-        <div class="container" style="display: flex;">
-            <div class="formGroup" style="margin: 2%;">
-                <label for="fname">First name:</label><br />
-                <input type="text" id="fname" name="fname" value="John">
-            </div>
-            <div class="formGroup" style="margin: 2%;">
-                <label for="lname">Last name:</label><br />
-                <input type="text" id="lname" name="lname" value="Doe">
-            </div>
-            <div class="formGroup" style="margin: 2%;">
-                <label for="fname">First name:</label><br />
-                <input type="text" id="fname" name="fname" value="John">
-            </div>
-            <div class="formGroup" style="margin: 2%;">
-                <label for="lname">Last name:</label><br />
-                <input type="text" id="lname" name="lname" value="Doe">
+            <div class="card">
+                <label for="to">To</label><br />
+                <select name="to" id="to" style="width: 50%;">
+                    <option value="IslamabadPa" selected>Islamabad, Pa</option>
+                    <option value="IslamabadPa1">Islamabad, Pa1</option>
+                    <option value="IslamabadPa2">Islamabad, Pa2</option>
+                    <option value="IslamabadPa3">Islamabad, Pa3</option>
+                </select>
             </div>
         </div>
-        <input type="submit" value="Submit">
+        <div class="container">
+            <div class="card">
+                <label for="Departiing">Departing</label><br />
+                <input type="date" id="Departiing" name="Departiing" style="width: 50%;">
+            </div>
+            <div class="card">
+                <label for="returning">Returning</label><br />
+                <input type="date" id="returning" name="returning" style="width: 50%;">
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <label for="adult">Adult</label><br />
+                <input type="number" id="adult" name="adult" value="0" style="width: 25%;">
+            </div>
+            <div class="card">
+                <label for="Child">Child</label><br />
+                <input type="number" id="Child" name="Child" value="0" style="width: 25%;">
+            </div>
+            <div class="card">
+                <label for="Infant">Infant</label><br />
+                <input type="number" id="Infant" name="Infant" value="0" style="width: 25%;">
+            </div>
+            <div class="card">
+                <label for="currency">Currency</label><br />
+                <select name="currency" id="currency" style="width: 35%;">
+                    <option value="currency" selected>PKR</option>
+                    <option value="currency1">PKR1</option>
+                    <option value="currency2">PKR2</option>
+                    <option value="currency3">PKR3</option>
+                </select>
+            </div>
+            <div class="card"></div>
+        </div>
+        <br />
+        <input type="button" value="SEARCH" style="background-color:  #f2784a;border-color: #f2784a; color: white; height: 35px; width: auto; border-radius: 5px;">
     </form>
 </body>
 
