@@ -3,6 +3,7 @@ CodeCamp 6
 Chakkarin Yinghan
 
 # Homework #2 
+https://chakkarin.github.io/booking.html
 
 ให้สร้าง form ชื่อ booking.html โดยมีหน้าตาดังรูป 
 Note : 
