@@ -1,0 +1,129 @@
+<!-- value unit ที่ นิยมใช้ 
+ฝึก display grid flex niky -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework CSS</title>
+</head>
+
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CSS syntax</th>
+                <th>CSS writing</th>
+                <th>selector</th>
+                <th>combinator</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p> seletor(ตำแหน่งที่เลือกว่าจะกำหนดลักษณะต่าง)</p>
+                    <p> declaration การประกาศลักษณะ ประกอบด้วย </p>
+                    <ul>
+                        <li>property : คุณสมบัติ</li>
+                        <li>value : ค่าที่กำหนด</li>
+                    </ul>
+                    <p>selector { property: value; property : value;}</p>
+                </td>
+                <td>
+                    <ul>
+                        <li> Inline CSS : เขียนภายใน tag HTML</li>
+                        <li>external CSS : นำเข้าไฟล์ CSS จากภายนอก <br /> &lt; link rel="stylesheet" type="text/css" href="mystyle.css" &gt;</li>
+                        <li>internal CSS : เขียนภายใน Element HTML <br /> &lt;style&gt; <br /> ... code CSS .... <br /> &lt;/style&gt;
+                        </li>
+                    </ul>
+
+                </td>
+                <td>
+                    <p> seletor จะประกอบไปด้วย </p>
+                    <ul>
+                        <li>ID</li>
+                        <li>Class</li>
+                        <li>Pseudo element</li>
+                        <li>Pseudo class</li>
+                        <li>Combinators</li>
+                        <li>attribute selector</li>
+                    </ul>
+
+                    <p> [Pseudo classes] จะประกอบไปด้วย </p>
+                    <ul>
+                        <li>:active : เลือกเฉพาะลิงค์ที่ทำงาน</li>
+                        <li>:checked : เลือกเฉพาะช่องที่ถูกเช็ค</li>
+                        <li>:disbled : เลือกเฉพาะช่องที่ไม่ทำงาน</li>
+                        <li>:focus : เลือก input element ที่ถูกคลิก</li>
+                        <li>:hover : เลือกเฉพาะบล็อกที่เมาส์เลื่อนโดน</li>
+                        <li>:link : เลือกทุกลิงค์ที่มี</li>
+                        <li>:required : เลือกเฉพาะช่องที่มี required</li>
+                        <li>:target : เลือกเฉพาะ target link</li>
+                    </ul>
+                    <p>[pseudo element] จะประกอบไปด้วย</p>
+                    <ul>
+                        <li>:: after : เพิ่มข้อความหลังแท็ก</li>
+                        <li>:: before : เพิ่มข้อความก่อนแท็ก</li>
+                        <li>:: first-letter : เลือกตัวแรกของแท็ก</li>
+                        <li>:: first-line : เลือกแถวแรกของแท็ก</li>
+                        <li>:: selection : ครอบตัวหนังสือ</li>
+                    </ul>
+                    <p>[combinators] จะประกอบไปด้วย</p>
+                    <ul>
+                        <li>descendant selector (space) : a b = tag b ทั้งหมดที่อยู่ใน a</li>
+                        <li>child selector (>) : a > b = tag b ที่เป็นลูกของ a</li>
+                        <li>adjacent sibling selector (+) : a + b = tag b ที่อยู่ล่าง a และติดกับ a เท่านั้น</li>
+                        <li>general sibling selector (~) : a ~ b = tag b ที่อยู่ล่าง a ทุก tag</li>
+                    </ul>
+                    <p>[attribute selector] จะประกอบไปด้วย</p>
+                    <ul>
+                        <li>tag[attribute] : attribute นั้นทั้งหมด</li>
+                        <li>tag[attribute = value] : เท่ากับ value ค่านั้น</li>
+                        <li>tag[attribute ~=value] : value ที่มีตัวอักษรนี้และไม่ติดกับเครื่องหมายหรือตัวอักษรอื่นๆ</li>
+                        <li>tag[attribute |= value] : ขี้นต้นด้วยค่า value นั้นและถูกขั้นด้วย -</li>
+                        <li>tag[attribute ^= value] : ขึ้นต้นด้วย ค่า value นั้น</li>
+                        <li>tag[attribute $= value] : ลงท้ายด้วย ค่า value นั้น</li>
+                        <li>tag[attribute *= value] : value ที่มีตัวอักษรใน value</li>
+                    </ul>
+                </td>
+                <td>
+                    <p>[combinators] จะประกอบไปด้วย</p>
+                    <ul>
+                        <li>descendant selector (space) : a b = tag b ทั้งหมดที่อยู่ใน a</li>
+                        <li>child selector (>) : a > b = tag b ที่เป็นลูกของ a</li>
+                        <li>adjacent sibling selector (+) : a + b = tag b ที่อยู่ล่าง a และติดกับ a เท่านั้น</li>
+                        <li>general sibling selector (~) : a ~ b = tag b ที่อยู่ล่าง a ทุก tag</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>For example css syntax</h1>
+    selector { property: value; property : value;}
+    <br>
+    <hr>
+    <h1>For example css writing</h1>
+    <h3>Inline CSS</h3>
+    &lt;div style="color: firebrick;" &gt; &lt;/div&gt;
+    <h3>external CSS</h3>
+    &lt; link rel="stylesheet" type="text/css" href="mystyle.css" &gt;
+    <h3>internal CSS</h3>
+    &lt;style&gt; <br /> selector { <br />property: value;<br /> property : value;<br />} <br /> &lt;/style&gt;
+    <br>
+    <hr>
+    <h1>selector example</h1>
+    <br>
+
+    <hr>
+    <h1>combinator example</h1>
+    div p { // p ทั้งหมดที่เป็นลูก div เท่านั้น<br /> background-color: yellow;<br /> }
+    <br /> div > p { // p ทั้งหมดที่เป็นลูก div ชั้นแรกเท่านั้น<br /> background-color: yellow;<br /> }
+
+    <br /> div + p { // p ที่อยู่ด้านล่าง tag ปิด div และติดกับ div เท่านั้น<br /> background-color: yellow;<br /> }
+    <br /> div ~ p { // p ที่อยู่ด้านล่าง tag ปิด div ทั้งหมด<br /> background-color: yellow;<br /> }
+</body>
+
+</html>
