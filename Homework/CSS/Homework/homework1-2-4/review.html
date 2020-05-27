@@ -1,5 +1,3 @@
-<!-- value unit ที่ นิยมใช้ 
-ฝึก display grid flex niky -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +8,9 @@
 </head>
 
 <body>
-
+    <hr>
+    <h2>ข้อที่ 1</h2>
+    <hr>
     <table border="1">
         <thead>
             <tr>
@@ -32,6 +32,7 @@
                     <p>selector { property: value; property : value;}</p>
                 </td>
                 <td>
+                    <p>การเขียนมีอยู่ 3 แบบ</p>
                     <ul>
                         <li> Inline CSS : เขียนภายใน tag HTML</li>
                         <li>external CSS : นำเข้าไฟล์ CSS จากภายนอก <br /> &lt; link rel="stylesheet" type="text/css" href="mystyle.css" &gt;</li>
@@ -41,7 +42,7 @@
 
                 </td>
                 <td>
-                    <p> seletor จะประกอบไปด้วย </p>
+                    <p> seletor มี 6 แบบจะประกอบไปด้วย </p>
                     <ul>
                         <li>ID</li>
                         <li>Class</li>
@@ -89,7 +90,7 @@
                     </ul>
                 </td>
                 <td>
-                    <p>[combinators] จะประกอบไปด้วย</p>
+                    <p>[combinators] 4 แบบจะประกอบไปด้วย</p>
                     <ul>
                         <li>descendant selector (space) : a b = tag b ทั้งหมดที่อยู่ใน a</li>
                         <li>child selector (>) : a > b = tag b ที่เป็นลูกของ a</li>
@@ -116,6 +117,36 @@
     <hr>
     <h1>selector example</h1>
     <br>
+    <h3>Class</h3>
+    .intro {<br /> background-color: yellow;<br /> }
+    <h3>Id</h3>
+    #intro {<br /> background-color: yellow;<br /> }
+    <h3>pseudo class</h3>
+    selector:pseudo-class {<br /> property: value;<br /> }
+    <h3>Pseudo element</h3>
+    selector::pseudo-element {<br /> property: value;<br /> }
+    <h3>attribute selector</h3>
+    a[target] { // attribute นั้นทั้งหมด เช่น tag a ที่มี target จะเป็นสีเหลือง </br>
+    background-color: yellow;</br>
+    }</br>
+    a[target="_blank"] { // เท่ากับ value ค่านั้น เช่น tag a ที่มี target = _blank จะเป็นสีเหลือง </br>
+    background-color: yellow;</br>
+    }</br>
+    [title~="flower"] { //value ที่มีตัวอักษรนี้และไม่ติดกับเครื่องหมายหรือตัวอักษรอื่นๆ จะมีผลเมื่อมี flower อยู่ใน title </br>
+    border: 5px solid yellow;</br>
+    }</br>
+    [class|=top] { // ขี้นต้นด้วยค่า value ตามด้วย - </br>
+    background: yellow;</br>
+    }</br>
+    [class^="top"] { // ขึ้นต้นด้วย top </br>
+    background: yellow;</br>
+    }</br>
+    [class$="test"] { //ลงท้ายด้วย test </br>
+    background: yellow; </br>
+    }</br>
+    [class*="te"] { //มี te ผสมอยู่ </br>
+    background: yellow; </br>
+    }</br>
 
     <hr>
     <h1>combinator example</h1>
@@ -124,6 +155,112 @@
 
     <br /> div + p { // p ที่อยู่ด้านล่าง tag ปิด div และติดกับ div เท่านั้น<br /> background-color: yellow;<br /> }
     <br /> div ~ p { // p ที่อยู่ด้านล่าง tag ปิด div ทั้งหมด<br /> background-color: yellow;<br /> }
+
+
+
+    <hr>
+    <h2>ข้อที่ 2</h2>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>property</th>
+                <th>value unit</th>
+                <th>differentiation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>property มี 6 กลุ่มใหญ่ๆ</p>
+                    <ul>
+                        <li>Property for content
+                            <ul>
+                                <li>color </li>
+                                <li>size </li>
+                                <li>font</li>
+                                <li>text</li>
+                                <li>list-style-type</li>
+                                <li>Height</li>
+                                <li>Width</li>
+                                <li>background</li>
+
+                            </ul>
+                        </li>
+                        <li>property for border
+                            <ul>
+                                <li>border</li>
+                                <li>table</li>
+                            </ul>
+                        </li>
+                        <li>property for padding
+                            <ul>
+                                <li>padding (top right buttom left)</li>
+                            </ul>
+                        </li>
+                        <li>property for margin
+                            <ul>
+                                <li>margin (top right buttom left)</li>
+                            </ul>
+                        </li>
+                        <li>property for element
+                            <ul>
+                                <li>display</li>
+                                <li>Height</li>
+                                <li>Width</li>
+                                <li>Position</li>
+                                <li>Float</li>
+                                <li>Align</li>
+                                <li>Flex</li>
+                                <li>Grid</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p>value unit มี 2 ประเภท</p>
+                    <ul>
+                        <li>Absolute lengths
+                            <ul>
+                                <li>cm เซนติเมตร</li>
+                                <li>mm มิลลิเมตร </li>
+                                <li>in นิ้ว </li>
+                                <li>px พิกเซล 1/96 นิ้ว
+                                </li>
+                                <li>pt พอยท์ 1/72 นิ้ว
+                                </li>
+                                <li>pc พิคาล 1/12 นิ้ว</li>
+                            </ul>
+                        </li>
+                        <li>relative lenghts
+                            <ul>
+                                <li>em เท่าขนาดฟอนต์ของ element</li>
+                                <li>ex เท่าความสูงของฟอนต์ของ element </li>
+                                <li>ch ความกว้างของตัวหนังสือใน parent element
+                                </li>
+                                <li>rem เท่าขนาดฟอนต์ของ root element
+                                </li>
+                                <li>pc พิคาล 1/12 นิ้ว</li>
+                                <li>vw เปอร์เซ็นต์ความกว้างหน้าจอ
+                                </li>
+                                <li>vmin เปอร์เซ็นต์ของ view point ต่ำสุด
+                                </li>
+                                <li>vmax เปอร์เซ็นต์ของ view point สูงสุด
+                                </li>
+                                <li>% เปอร์เซ็นต์ของ parent element
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td>property เป็นตัวกำหนดว่าต้องการเปลี่ยนแปลงค่าอะไรลงไป ส่วน value คือตัวกำหนดว่าต้องการ ต้องการกำหนด property จำนวนเท่าไหร่</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>ข้อที่ 3</h2>
+    <hr>
 </body>
 
 </html>

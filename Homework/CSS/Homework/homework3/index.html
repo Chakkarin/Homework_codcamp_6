@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork 4 :: CSS</title>
+
+    <style>
+        select {
+            width: 44%;
+        }
+        
+        button {
+            border-radius: 7px;
+        }
+        
+        .tooltip {
+            font-weight: 900;
+            color: darkgoldenrod;
+            background-color: rgb(255, 204, 74);
+        }
+        
+        .reqStar {
+            color: red;
+        }
+        /* Tooltip text */
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+        /* Show the tooltip text when you mouse over the tooltip container */
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        
+        h3 {
+            background-color: rgb(226, 226, 226);
+            padding: 2%;
+            border-top: 1px solid gray;
+            color: gray;
+            /* border-top-color: gray; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name <span class="reqStar">*</span>:</td>
+                    <td>
+                        <input type="text" name="" id=""><button class="tooltip">?
+                            <span class="tooltiptext">อะไรเอ่ย</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tab Text <span class="reqStar">*</span>:</td>
+                    <td> <input type="text" name="" id=""><button class="tooltip">?
+                        <span class="tooltiptext">อะไรเอ่ย</span>
+
+                    </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>URL <span class="reqStar">*</span>:</td>
+                    <td colspan="2">http://www.wizehive.com/webform/<input type="text" name="" id="" style="width: 25%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h3 style=" text-transform: uppercase;">form setup</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Form :</td>
+                    <td>
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                        </select>
+                        <button>Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Logo:</td>
+                    <td>
+                        <label for="" style="
+                        padding-right: 16%;
+                    "> no logo uploaded </label><button>Upload Logo</button></td>
+                </tr>
+                <tr>
+                    <td>Template Text:</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="English">English</option>
+                        </select>
+                        <button>Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Review Form:</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="Default">Default</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Review Score:</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="Rating">Rating</option>
+                        </select>
+                        <button>Reload Fields</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Score Type:</td>
+                    <td>
+                        <select name="" id="" style="width: 33%;">
+                            <option value="Average">Average</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Max Score:</td>
+                    <td>
+                        <input type="text" value="4.00">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+
+</html>
