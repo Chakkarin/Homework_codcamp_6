@@ -259,8 +259,116 @@
     </table>
 
     <hr>
-    <h2>ข้อที่ 3</h2>
+    <h2>ข้อที่ 4</h2>
     <hr>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>display value</th>
+                <th>grid</th>
+                <th>flex</th>
+                <th>justify and align</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>inline อยู่บรรทัดเดียวกัน ไม่สามารถปรับแต่ง ความกว้าง ความสูงได้</li>
+                        <li>block อยู่คนละบรรทัด</li>
+                        <li>contents ทำให้ elementนั้นกลายเป็น contents ไม่สามารถปรับ margin, padding, border, background ได้</li>
+                        <li>flex การจัดรูปแบบ flex</li>
+                        <li>grid การจัดรูปแบบ grid</li>
+                        <li>none ซ่อนการแสดงผล</li>
+                        <li>hidden ซ่อนการแสดงผลแต่เหลือพื้นที่ไว้</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>grid ต้อง display: grid ใน container ก่อนเสมอ</li>
+                        <li>grid layout : คือการกำหนดรูปแบบหน้าจอเป็นลักษณะ คอลัมน์ และ แถว</li>
+                        <li>grid column : แถวแนวตั้ง</li>
+                        <li>grid row : แถวแนวนอน</li>
+                        <li>grid gap : ช่องว่างระหว่าง grid สามารถตั้งค่าได้ 3 แบบ </li>
+                        <li>grid column gap : ช่องว่างระหว่างคอลัมน์</li>
+                        <li>grid row gap : ช่องว่างระหว่างแถว</li>
+                        <li>grid gap : ช่องว่างระหว่างคอลัมน์ และ แถว</li>
+                        <li>grid line : ใช้กำหนดการแบ่ง grid ของจำนวนช่องที่ต้องการรวมกันเป็น 1 ช่องใหญ่</li>
+                        <li>grid-template-columns : กำหนด ความกว้าง ของแต่ละ คอล้มน์</li>
+                        <li>grid-template-rows : กำหนด ความสูง ของแต่ละ แถว</li>
+                        <li>gird-line : เส้นแถวหรือเส้นคอลัมน์</li>
+                        <li>justify-content: การกำหนดการจัดเรียงแบบแนวนอนของแต่ละแถวของ grid</li>
+                        <li>align-content: การกำหนดการจัดเรียงแบบแนวตั้งของแต่ละคอลัมน์ของ grid</li>
+                        <li>grid-column: การกำหนดจำนวนช่องของคอลัมน์</li>
+                        <li>grid-row: การกำหนดจำนวนช่องของแถว</li>
+                        <li>grid-area: การกำหนดพื้นที่ (แถว , คอลัมน์)</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>display: flex ใน container ก่อนเสมอ</li>
+                        <li>flex-direction : การกำหนดรูปแบบการจัด item แบบ row หรือ column</li>
+                        <li>flex-wrap : กำหนดการม้วนของ item ใน flex-container</li>
+                        <li>flex-flow : การผสมระหว่าง flex direction และ flex-wrap</li>
+                        <li>justify-content : การจัดการ item แนวนอน justify-content</li>
+                        <li>align-items : การจัดการ item แนวตั้ง align-items</li>
+                        <li>align-content : การจัดการ flex line align-content</li>
+                        <li>order : การจัดอันดับ item ว่า item ไหนมาก่อนหลัง</li>
+                        <li>flex-grow : item จะขยายความกว้างได้มากขึ้นเป็นจำนวนเท่า</li>
+                        <li>flex-shrink : item จะหดความกว้างได้มากขึ้นเป็นจำนวนเท่า</li>
+                        <li>flex-basis : กำหนดความกว้าง item เบื้องต้น</li>
+                        <li>flex : shorthand ของ grow, shrink, basis ตามลำดับ</li>
+                        <li>align-self : การจัด item แบบเฉพาะบาง item ใน flex-container</li>
+                    </ul>
+                </td>
+                <td>
+                    <p>justify จะเป็นการจัดรูปแบบในแนวนอน</p>
+                    <p>align จะเป็นการจัดรูปแบบในแนวตั้ง</p>
+                    <ul>
+                        <li>(ใช้ flex-start ใน flex ) (ใช้ start ใน grid) หน้าสุดของ container หรือ ซ้ายสุด</li>
+                        <li>(ใช้ flex-end ใน flex ) (ใช้ end ใน grid)ท้ายสุดของ container หรือ ขวาสุด</li>
+                        <li>center : ตรงกลาง</li>
+                        <li>space-between : พื้นที่ระหว่าง container line(flex) หรือ คอลัมน์(grid) เท่ากัน</li>
+                        <li>space-around : พื้นที่รอบๆ(flex) พื้นหน้าและหลัีงคอลัมน์เท่ากัน(grid)</li>
+                        <li>space-evenly : พื้นที่หน้าและหลังแต่ละคอลัมน์ เท่ากันหมด (เฉพาะ grid)</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>ข้อที่ 5.1 5.2 แต่ข้อ 5 ใหญ่อยู่โจทต่อไป</h2>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>position</th>
+                <th>z-index</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>static : เป็นค่าพื้นฐานของทุกบล็อกโดนจะเลื่อนตามหน้าเว็บปกติ</li>
+                        <li>relative : การเลื่อนออกจากตำแหน่งเดิม ตามที่เรากำหนดการดัน block จากทาง ซ้าย ขวา บน ล่าง
+                        </li>
+                        <li>fixed : กำหนดให้ block นั้นยึดอยู่กับที่บนหน้าเว็บ</li>
+                        <li>alsolute : การเลื่อนออกจากมุมซ้ายบนสุดของหน้าจะ ตามการกำหนดการดัน block จากทาง ซ็าย ขวา บน ล่าง
+                        </li>
+                        <li>sticky : การรวม relative กับ fixed ไว้ด้วยกัน โดยการกำหนด relative เพิ่มว่าจะให้ไป fix ที่ top หรือ bottom ทำให้เราเห็น block นั้นเลื่อนและถูกตรีงไว้เมื่อเรา เลื่อน scroll เมาส์</li>
+                    </ul>
+                </td>
+                <td>
+                    Z-index : เป็นการจัดการ element ในรูปแบบชั้น layer บนหน้าจอโดยค่าน้อยจะอยู่ด้านหลังส่วนค่ามากจะอยู่ด้านหน้า ค่าเริ่มต้นของทุก element คือ z-index = 0
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
 </body>
 
 </html>

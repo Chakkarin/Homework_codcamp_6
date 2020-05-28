@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike test</title>
+
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgb(0, 0, 0);
+        }
+        
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgb(0, 0, 0);
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        
+        li {
+            padding: 5px 25px;
+        }
+        
+        .line {
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-right-color: rgb(0, 0, 0);
+        }
+        
+        .content,
+        .detailFooter {
+            margin: 0 5%;
+        }
+        
+        .listProduct {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .card {
+            flex-direction: column;
+            width: 30%;
+        }
+        
+        .imageList {
+            width: 100%;
+            height: "auto";
+        }
+        
+        .namePrice {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        
+        .type {
+            margin-top: 0px;
+        }
+        
+        .showHit {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 100%;
+        }
+        
+        .cardHot,
+        .card {
+            margin: 0 1%;
+        }
+        
+        .menuFooter {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .listMenu {
+            flex-direction: row;
+        }
+        
+        .listMenu>ul,
+        .leftFooter>ul {
+            flex-direction: column;
+        }
+        
+        footer {
+            flex-direction: column;
+            background-color: rgb(19, 19, 19);
+            color: white;
+        }
+        
+        .contentFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .leftFooter {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .contentFooter a {
+            color: rgb(207, 207, 207);
+            text-decoration: none;
+        }
+        
+        .contentFooter a:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        
+        .bold {
+            color: white;
+            font-weight: bold;
+        }
+        
+        header a,
+        nav a,
+        .content a {
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+        }
+        
+        header a:hover,
+        nav a:hover,
+        .content a:hover {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li class="line"><a href="#">เข้าร่วมกับเรา</a></li>
+            <li class="line"><a href="#">โลโก้</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">ความช่วยเหลือ</a></li>
+            <li><a href="#">ตะกร้า</a></li>
+            <li><a href="#">เปลี่ยนภาษา</a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <div>
+            <a href="#">โลโก้</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">บุรุษ</a></li>
+                <li><a href="#">สตรี</a></li>
+                <li><a href="#">เด็ก</a></li>
+                <li><a href="#">ออกแบบด้วยตนเอง</a></li>
+                <li><a href="#">ปฏิทินเปิดตัว</a></li>
+                <li><a href="#">ลดราคา</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="text" placeholder="ค้นหา">
+        </div>
+    </nav>
+    <div style="display: flex; justify-content: center;  border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(0, 0, 0);">
+        <p>COVID-19: ข้อมูลเกี่ยวกับร้าน Nike และการจัดส่ง สามารถดูได้ที่นี่</p>
+    </div>
+    <div class="content">
+        <nav>
+            <div style="width: 33%;">
+                <h4>ผู้ชาย</h4>
+            </div>
+            <div style="width: 33%;">
+                <ul>
+                    <li>
+                        <a href="#">รองเท้า</a>
+                    </li>
+                    <li>
+                        <a href="#">เสื้อผ้า</a>
+                    </li>
+                    <li>
+                        <a href="#">อุปกรณ์</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="width: 33%;"></div>
+        </nav>
+        <div>
+            <img src="./img1.jpg" alt="" width="100%" height="auto">
+        </div>
+        <div>
+            <h3 style="margin-top: 5%;">รองเท้าเด่น
+            </h3>
+        </div>
+        <div class="listProduct">
+            <div class="card">
+                <img src="./imglist1.jpg" class="imageList" alt="">
+                <div class="contentsProduct">
+                    <div class="namePrice">
+                        <h4>Nike React</h4>
+                        <h4>฿5,200</h4>
+                    </div>
+                    <div class="type">
+                        <p>ร้องเท้าผู้ชาย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./imglist1.jpg" class="imageList" alt="">
+                <div class="contentsProduct">
+                    <div class="namePrice">
+                        <h4>Nike React</h4>
+                        <h4>฿5,200</h4>
+                    </div>
+                    <div class="type">
+                        <p>ร้องเท้าผู้ชาย</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./imglist1.jpg" class="imageList" alt="">
+                <div class="contentsProduct">
+                    <div class="namePrice">
+                        <h4>Nike React</h4>
+                        <h4>฿5,200</h4>
+                    </div>
+                    <div class="type">
+                        <p>ร้องเท้าผู้ชาย</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 style="margin-top: 5%;">กำลังฮิต
+            </h3>
+        </div>
+        <div>
+            <div class="listProduct">
+                <div class="cardHot">
+                    <img src="./img1.jpg" style="width: 100%;" alt="">
+                </div>
+                <div class="cardHot">
+                    <img src="./img1.jpg" style="width: 100%;" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 style="margin-top: 5%;">อุปกรณ์ชิ้นจำเป็น
+            </h3>
+        </div>
+        <div>
+            <div class="listProduct">
+                <div class="cardHot">
+                    <img src="./img1.jpg" style="width: 100%;" alt="">
+                </div>
+                <div class="cardHot">
+                    <img src="./img1.jpg" style="width: 100%;" alt="">
+                </div>
+                <div class="cardHot">
+                    <img src="./img1.jpg" style="width: 100%;" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="menuFooter">
+                <div class="listMenu">
+                    <ul>
+                        <li>
+                            <h4 style="text-align: left;">รองเท้าผู้ชาย</h4>
+                        </li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                    </ul>
+
+                </div>
+                <div class="listMenu">
+                    <ul>
+                        <li>
+                            <h4 style="text-align: left;">เสื้อผ้าผู้ชาย</h4>
+                        </li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                    </ul>
+
+                </div>
+                <div class="listMenu">
+                    <ul>
+                        <li>
+                            <h4 style="text-align: left;">อุปกรณ์กีฬาผู้ชาย</h4>
+                        </li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                    </ul>
+
+                </div>
+                <div class="listMenu">
+                    <ul>
+                        <li>
+                            <h4 style="text-align: left;">สินค้าเด่น</h4>
+                        </li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                        <li><a href="#">Lorem, ipsum dolor.</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="detailFooter">
+            <div class="contentFooter">
+                <div class="leftFooter">
+                    <ul>
+                        <li><a href="#" class="bold">ค้นหาร้านค้า</a></li>
+                        <li><a href="#" class="bold">สมัครเป็นสมาชิก</a></li>
+                        <li><a href="#" class="bold">ข้อติชมเว็บไซต์</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="bold">รับความช่วยเหลือ</a></li>
+                        <li><a href="#">สถานะคำสั่งซื้อ</a></li>
+                        <li><a href="#">การส่งมอบ</a></li>
+                        <li><a href="#">การคืนสินค้า</a></li>
+                        <li><a href="#">ทางเลือกการชำระเงิน</a></li>
+                        <li><a href="#">ติดต่อเรา</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="bold">เกี่ยวกับ NIKE</a></li>
+                        <li><a href="#">ข่าวสาร</a></li>
+                        <li><a href="#">ร่วมงานกับเรา</a></li>
+                        <li><a href="#">ร่วมลงทุนกับเรา</a></li>
+                        <li><a href="#">ความยั่งยืน</a></li>
+                    </ul>
+                </div>
+                <div class="rightFooter">
+                    <ul>
+                        <li><a href="">S1</a></li>
+                        <li><a href="">S2</a></li>
+                        <li><a href="">S3</a></li>
+                        <li><a href="">S4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="contentFooter">
+                <!-- <div class="leftFooter"> -->
+                <ul>
+                    <li><a href="" class="bold">เปลี่ยนภาษา</a></li>
+                    <li>© 2020 Nike test สงวนลิขสิทธิ์</li>
+                </ul>
+                <!-- </div> -->
+                <!-- <div class="rightFooter"> -->
+                <ul>
+                    <li><a href="">คำแนะนำ</a></li>
+                    <li><a href="">เงื่อนไขการขาย</a></li>
+                    <li><a href="">กำหนดการใช่</a></li>
+                    <li><a href="">นโยบายความเป็นส่วนตัวของ Nike</a></li>
+                </ul>
+                <!-- </div> -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -25,3 +25,7 @@ slide 15 (review CSS)
 4.1 value ใน display property มีอะไรบ้าง
 4.2 grid และ flex แตกต่างกันอย่างไร
 4.3 justify and align แตกต่างกันอย่างไร
+
+silde 16 (review CSS)
+5.1 position คืออะไร และ อะไรบ้าง
+5.2 z-index คืออะไรใช้อย่างไร
