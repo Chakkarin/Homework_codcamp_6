@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework7 :: CSS</title>
+
+    <style>
+        img#bgImg {
+            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+        
+        img#imgVdo {
+            width: 100%;
+            height: auto;
+        }
+        
+        .card {
+            /* position: absolute; */
+            border-radius: 1rem;
+            background-color: white;
+            width: 70%;
+            margin-bottom: 3%;
+        }
+        
+        .content {
+            width: 70%;
+        }
+        
+        .content-col {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: space-between;
+            width: 70%;
+        }
+        
+        .content p {
+            font-size: 25px;
+        }
+        
+        .container {
+            /* fixcard top */
+            position: absolute;
+            width: 100%;
+            /* fixcard top */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 5% 7%;
+        }
+        
+        .group-control {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-flow: wrap;
+        }
+        
+        .group-control p {
+            width: 49%;
+        }
+        
+        input {
+            width: 100%;
+            height: 35px;
+        }
+        
+        textarea,
+        input {
+            border: rgb(196, 196, 196) solid 1px;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+        
+        p {
+            color: rgb(119, 119, 119);
+        }
+        
+        button[type=submit] {
+            font-weight: bold;
+            color: white;
+            border: #e91126 solid 1px;
+            background-color: #e91126;
+            border-radius: 3px;
+        }
+        
+        .show-col {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .text-content {
+            word-wrap: break-word;
+        }
+        
+        .text-content>p {
+            font-size: 10px;
+            width: 50%;
+        }
+        
+        h2 {
+            color: rgb(233, 17, 38);
+            font-size: 60px;
+        }
+        
+        @media (min-width: 1281px) {
+            .container {
+                top: 47%;
+            }
+            .group-control p {
+                width: 49%;
+            }
+            h1 {
+                font-size: 57px;
+            }
+            button[type=submit] {
+                font-size: 30px;
+                width: 170px;
+                height: 50px;
+            }
+            img#bgImg {
+                top: -15%;
+            }
+            .content-col div {
+                width: 50%;
+            }
+        }
+        /* 
+            ##Device = Laptops, Desktops
+            ##Screen = B/w 1025px to 1280px
+            */
+        
+        @media (min-width: 1025px) and (max-width: 1280px) {
+            .container {
+                top: 40%;
+            }
+            .group-control p {
+                width: 49%;
+            }
+            h1 {
+                font-size: 57px;
+            }
+            button[type=submit] {
+                font-size: 30px;
+                width: 170px;
+                height: 50px;
+            }
+            img#bgImg {
+                top: -7%;
+            }
+            .content-col div {
+                width: 50%;
+            }
+        }
+        /* 
+            ##Device = Tablets, Ipads (portrait)
+            ##Screen = B/w 768px to 1024px
+            */
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .container {
+                top: 35%;
+            }
+            .group-control p {
+                width: 100%;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            button[type=submit] {
+                font-size: 25px;
+                width: 130px;
+                height: 40px;
+            }
+            img#bgImg {
+                top: -2%;
+            }
+            .content-col div {
+                width: 50%;
+            }
+        }
+        /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+        
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .container {
+                top: 35%;
+            }
+            .group-control p {
+                width: 100%;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            button[type=submit] {
+                font-size: 25px;
+                width: 130px;
+                height: 40px;
+            }
+            img#bgImg {
+                top: -2%;
+            }
+            .content-col div {
+                width: 50%;
+            }
+        }
+        /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+        
+        @media (min-width: 481px) and (max-width: 767px) {
+            .container {
+                top: 30%;
+            }
+            .group-control p {
+                width: 100%;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            button[type=submit] {
+                font-size: 25px;
+                width: 130px;
+                height: 40px;
+            }
+            img#bgImg {
+                top: -2%;
+            }
+            .content-col div {
+                width: 100%;
+            }
+        }
+        /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+        
+        @media (min-width: 320px) and (max-width: 480px) {
+            .container {
+                top: 30%;
+            }
+            .group-control p {
+                width: 100%;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            button[type=submit] {
+                font-size: 25px;
+                width: 130px;
+                height: 40px;
+            }
+            img#bgImg {
+                top: -2%;
+            }
+            .content-col div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0px; background-color: whitesmoke; display: flex; justify-content: center;">
+    <img src="./imghead.jpg" alt="" id="bgImg">
+    <div class="container">
+        <div class="card">
+            <h1 style="text-align: center;">Contact us today</h1>
+            <form action="#" method="post">
+                <div class="group-control">
+                    <p>Your Name (required)<br>
+                        <span class="">
+                            <input style="width: 100%;" type="text" name="your-name" id="name" value="" class="">
+                        </span>
+                    </p>
+                    <p>Your Email (required)<br>
+                        <span class="">
+                            <input style="width: 100%;" type="email" name="your-email" ide="email" value="" class="">
+                        </span>
+                    </p>
+                </div>
+                <p>Subject<br>
+                    <span class="fullWidth">
+                        <input type="text" name="your-subject" value="" class="">
+                    </span>
+                </p>
+                <p>Your Message<br>
+                    <span class="fullWidth">
+                        <textarea style="width: 100%;" name="your-message" cols="40" rows="7" class="area"></textarea>
+                    </span>
+                </p>
+                <p style="text-align: center;">
+                    <button type="submit" class="">Send</button>
+                </p>
+            </form>
+        </div>
+        <div class="content">
+            <p class="text-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, fuga accusamus! Sed laboriosam qui nobis ex, explicabo modi earum alias tenetur dicta ratione praesentium repudiandae eveniet! Nam vel commodi vero.
+            </p>
+            <p class="text-content">
+                <img src="./imgvdo.jpg" alt="" id="imgVdo">
+            </p>
+        </div>
+        <div class="content-col">
+            <div>
+                <h2>Header Header</h2>
+                <p>Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div>
+                <h2>Header Header</h2>
+                <p>Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div>
+                <h2>Header Header</h2>
+                <p>Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div>
+                <h2>Header Header</h2>
+                <p>Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</br>
+                    Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
