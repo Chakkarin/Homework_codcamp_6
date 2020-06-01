@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework8 :: CSS animation</title>
+
+    <style>
+        .animation-css {
+            animation-name: letGoAnimation;
+            animation-duration: 10s;
+            width: 300px;
+            height: 300px;
+            opacity: 1;
+        }
+        
+        @keyframes letGoAnimation {
+            from {
+                color: red;
+                width: 1000px;
+                height: 1000px;
+                border: royalblue solid 5px;
+                background-color: blue;
+                position: relative;
+                left: 500px;
+            }
+            to {
+                color: darkolivegreen;
+                border: springgreen solid 5px;
+                background-color: darkmagenta;
+                position: relative;
+                left: 10px;
+                opacity: 0;
+            }
+        }
+        /* //////////// */
+        
+        .animation-css2 {
+            animation-name: letGoAnimation2;
+            animation-duration: 10s;
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+        }
+        
+        @keyframes letGoAnimation2 {
+            0% {
+                color: red;
+                width: 1000px;
+                height: 1000px;
+                border: royalblue solid 5px;
+                background-color: blue;
+                position: relative;
+                left: 500px;
+                opacity: 0.3
+            }
+            25% {
+                color: darkorange;
+                width: 500px;
+                height: 500px;
+                border: royalblue solid 4px;
+                background-color: blue;
+                position: relative;
+                left: 400px;
+                opacity: 0.5;
+            }
+            50% {
+                color: darkred;
+                width: 250px;
+                height: 250px;
+                border: royalblue solid 3px;
+                background-color: blue;
+                position: relative;
+                left: 300px;
+                opacity: 0.7;
+            }
+            100% {
+                color: darkolivegreen;
+                width: 125px;
+                height: 125px;
+                border: springgreen solid 2px;
+                background-color: darkmagenta;
+                position: relative;
+                left: 0px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation-css">
+        <h1>from to</h1>
+    </div>
+    <div class="animation-css2">
+        <h1>%</h1>
+    </div>
+</body>
+
+</html>
