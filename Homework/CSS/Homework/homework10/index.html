@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework10 :: CSS animation</title>
+
+    <style>
+        .animation-css {
+            /* animation-name: letGoAnimation2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: ease; */
+            width: 100px;
+            height: 100px;
+            /* animation: animation-name duration-time delay iterative-count animation-timing-function animation-direction; */
+            animation: letGoAnimation2 5s 3s infinite ease reverse;
+            visibility: hidden;
+        }
+        
+        .animation-css1 {
+            /* animation-name: letGoAnimation2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: ease-in;
+            width: 100px; */
+            height: 100px;
+            animation: letGoAnimation2 infinite reverse ease-in 5s 3s;
+            visibility: hidden;
+        }
+        
+        .animation-css2 {
+            /* animation-name: letGoAnimation2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: ease-out; */
+            width: 100px;
+            height: 100px;
+            animation: letGoAnimation2 reverse ease-out infinite 5s 3s;
+            visibility: hidden;
+        }
+        
+        .animation-css3 {
+            /* animation-name: letGoAnimation2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: ease-in-out; */
+            width: 100px;
+            height: 100px;
+            animation: letGoAnimation2 reverse ease-out infinite 5s 3s;
+            visibility: hidden;
+        }
+        
+        .animation-css4 {
+            /* animation-name: letGoAnimation2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: linear; */
+            width: 100px;
+            height: 100px;
+            /* animation: animation-name duration-time delay iterative-count animation-timing-function animation-direction; */
+            animation: letGoAnimation2 5s 3s infinite linear reverse;
+            visibility: hidden;
+        }
+        
+        @keyframes letGoAnimation2 {
+            0% {
+                color: red;
+                width: 300px;
+                height: 300px;
+                border: royalblue solid 5px;
+                background-color: blue;
+                position: relative;
+                left: 500px;
+                visibility: visible;
+            }
+            25% {
+                color: darkorange;
+                width: 200px;
+                height: 200px;
+                border: royalblue solid 4px;
+                background-color: blue;
+                position: relative;
+                left: 400px;
+            }
+            50% {
+                color: darkred;
+                width: 100px;
+                height: 100px;
+                border: royalblue solid 3px;
+                background-color: blue;
+                position: relative;
+                left: 300px;
+            }
+            75% {
+                color: darkred;
+                width: 50px;
+                height: 50px;
+                border: royalblue solid 3px;
+                background-color: blue;
+                position: relative;
+                left: 300px;
+            }
+            100% {
+                color: darkolivegreen;
+                width: 25px;
+                height: 25px;
+                border: springgreen solid 2px;
+                background-color: darkmagenta;
+                position: relative;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation-css">
+        <h1>ease</h1>
+    </div>
+    <div class="animation-css1">
+        <h1>ease-in</h1>
+    </div>
+    <div class="animation-css2">
+        <h1>ease-out</h1>
+    </div>
+    <div class="animation-css3">
+        <h1>ease-in-out</h1>
+    </div>
+
+
+    <div class="animation-css4">
+        <h1>linear</h1>
+    </div>
+</body>
+
+</html>
