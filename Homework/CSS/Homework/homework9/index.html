@@ -8,82 +8,80 @@
 
     <style>
         .animation-css {
-            animation-name: letGoAnimation;
-            animation-duration: 10s;
-            width: 300px;
-            height: 300px;
-            opacity: 1;
+            animation-name: letGoAnimation2;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-iteration-count: 2;
+            animation-direction: reverse;
+            width: 100px;
+            height: 100px;
         }
         
-        @keyframes letGoAnimation {
-            from {
-                color: red;
-                width: 1000px;
-                height: 1000px;
-                border: royalblue solid 5px;
-                background-color: blue;
-                position: relative;
-                left: 500px;
-            }
-            to {
-                color: darkolivegreen;
-                border: springgreen solid 5px;
-                background-color: darkmagenta;
-                position: relative;
-                left: 10px;
-                opacity: 0;
-            }
+        .animation-css1 {
+            animation-name: letGoAnimation2;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            width: 100px;
+            height: 100px;
         }
-        /* //////////// */
         
         .animation-css2 {
             animation-name: letGoAnimation2;
-            animation-duration: 10s;
-            width: 300px;
-            height: 300px;
-            opacity: 0;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+            width: 100px;
+            height: 100px;
         }
         
         @keyframes letGoAnimation2 {
             0% {
                 color: red;
-                width: 1000px;
-                height: 1000px;
+                width: 300px;
+                height: 300px;
                 border: royalblue solid 5px;
                 background-color: blue;
                 position: relative;
                 left: 500px;
-                opacity: 0.3
             }
             25% {
                 color: darkorange;
-                width: 500px;
-                height: 500px;
+                width: 200px;
+                height: 200px;
                 border: royalblue solid 4px;
                 background-color: blue;
                 position: relative;
                 left: 400px;
-                opacity: 0.5;
             }
             50% {
                 color: darkred;
-                width: 250px;
-                height: 250px;
+                width: 100px;
+                height: 100px;
                 border: royalblue solid 3px;
                 background-color: blue;
                 position: relative;
                 left: 300px;
-                opacity: 0.7;
+            }
+            75% {
+                color: darkred;
+                width: 50px;
+                height: 50px;
+                border: royalblue solid 3px;
+                background-color: blue;
+                position: relative;
+                left: 300px;
             }
             100% {
                 color: darkolivegreen;
-                width: 125px;
-                height: 125px;
+                width: 25px;
+                height: 25px;
                 border: springgreen solid 2px;
                 background-color: darkmagenta;
                 position: relative;
                 left: 0px;
-                opacity: 1;
             }
         }
     </style>
@@ -91,10 +89,13 @@
 
 <body>
     <div class="animation-css">
-        <h1>from to</h1>
+        <h1>reverse</h1>
+    </div>
+    <div class="animation-css1">
+        <h1>alternate</h1>
     </div>
     <div class="animation-css2">
-        <h1>%</h1>
+        <h1>alternate-reverse</h1>
     </div>
 </body>
 
