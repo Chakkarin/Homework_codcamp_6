@@ -5,96 +5,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework12 :: bootstrap</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
+        img {
+            width: 100%;
+            height: auto;
 
+        }
+
+        .col {
+            width: 100%;
+            height: auto;
+            padding: 0%;
+        }
+
+        #formSend {
+            top: -50;
+            margin: 3%;
+        }
+
+        @media (min-width: 576px) {
+            .col {
+                position: absolute;
+                top: -3%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .col {
+                position: absolute;
+                top: -7%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col {
+                position: absolute;
+                top: -13%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .col {
+                position: absolute;
+                top: -13%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-center" style="margin: 1%;">
-            <img src="./css3.png" class="rounded" alt="...">
-        </div>
+    <div class="col">
+        <img src="./imghead.jpg" alt="...">
+        <div class="container" style="margin-bottom: 5%;">
+            <div class="card" style="margin-top: -20%;
+            margin-bottom: 15px; border-radius: 3%;">
+                <form id="formSend">
+                    <div class="text-center" style="margin-bottom: 10%;">
+                        <h1><b>Contact us today</b></h1>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="yourName">Your Name (required)</label>
+                            <input type="text" class="form-control" id="yourName">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Your Email (required)</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Subject">Subject</label>
+                        <input type="text" class="form-control" id="Subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" name="message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-lg btn-primary"
+                            style="background: #e91126; border-color: #e91126; ;"><b>SIGN
+                                IN</b></button>
+                    </div>
+                </form>
+            </div>
+            <p class="text-center" style="margin: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae perferendis vel
+                eligendi cum atque
+                provident quam, soluta eaque rerum quas natus dolorum, earum maiores. Quod dolores perferendis atque ea
+                inventore?
+            </p>
+            <img src="./imgvdo.jpg" class="mr-3" alt="...">
+            <div class="row">
+                <div class="col-md-6" style="margin-top: 5%">
+                    <h1>
+                        <b>
+                            Lorem ipsum <br /> dolor sit amet.
+                        </b>
+                    </h1>
+                    <p class="text-left">Business Intelligence</p>
+                    SEO – Search Engine Optimization<br />
+                    SEM streategy<br />
+                    Digital Content<br />
+                    Branding Design<br />
+                    UX & UI Design<br />
+                    Product Prototype</p>
+                </div>
+                <div class="col-md-6" style="margin-top: 5%">
+                    <h1>
+                        <b>
+                            Lorem ipsum <br /> dolor sit amet.
+                        </b>
+                    </h1>
+                    <p class="text-left">Business Intelligence</p>
+                    SEO – Search Engine Optimization<br />
+                    SEM streategy<br />
+                    Digital Content<br />
+                    Branding Design<br />
+                    UX & UI Design<br />
+                    Product Prototype</p>
+                </div>
+                <div class="col-md-6" style="margin-top: 5%">
+                    <h1>
+                        <b>
+                            Lorem ipsum <br /> dolor sit amet.
+                        </b>
+                    </h1>
+                    <p class="text-left">Business Intelligence</p>
+                    SEO – Search Engine Optimization<br />
+                    SEM streategy<br />
+                    Digital Content<br />
+                    Branding Design<br />
+                    UX & UI Design<br />
+                    Product Prototype</p>
+                </div>
+                <div class="col-md-6" style="margin-top: 5%">
+                    <h1>
+                        <b>
+                            Lorem ipsum <br /> dolor sit amet.
+                        </b>
+                    </h1>
+                    <p class="text-left">Business Intelligence</p>
+                    SEO – Search Engine Optimization<br />
+                    SEM streategy<br />
+                    Digital Content<br />
+                    Branding Design<br />
+                    UX & UI Design<br />
+                    Product Prototype</p>
+                </div>
+            </div>
 
-    </div>
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="card ">
-                    <div class="card-body">
-                        <h2 class="card-title">title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis explicabo placeat voluptate commodi molestiae, consequuntur laboriosam a rerum? Inventore officiis ratione iure sequi suscipit dolores voluptatibus, exercitationem
-                            quos odio.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card ">
-                    <div class="card-body">
-                        <h2 class="card-title">title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis explicabo placeat voluptate commodi molestiae, consequuntur laboriosam a rerum? Inventore officiis ratione iure sequi suscipit dolores voluptatibus, exercitationem
-                            quos odio.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card ">
-                    <div class="card-body">
-                        <h2 class="card-title">title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis explicabo placeat voluptate commodi molestiae, consequuntur laboriosam a rerum? Inventore officiis ratione iure sequi suscipit dolores voluptatibus, exercitationem
-                            quos odio.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card ">
-                    <div class="card-body">
-                        <h2 class="card-title">title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis explicabo placeat voluptate commodi molestiae, consequuntur laboriosam a rerum? Inventore officiis ratione iure sequi suscipit dolores voluptatibus, exercitationem
-                            quos odio.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card ">
-                    <div class="card-body">
-                        <h2 class="card-title">title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis explicabo placeat voluptate commodi molestiae, consequuntur laboriosam a rerum? Inventore officiis ratione iure sequi suscipit dolores voluptatibus, exercitationem
-                            quos odio.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card ">
-                    <div class="card-body">
-                        <h2 class="card-title">title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis explicabo placeat voluptate commodi molestiae, consequuntur laboriosam a rerum? Inventore officiis ratione iure sequi suscipit dolores voluptatibus, exercitationem
-                            quos odio.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container text-center">
-            <div class="col-12">
-                <div class="card ">
-                    <div class="card-body">
-                        <h2 class="card-title">title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis explicabo placeat voluptate commodi molestiae, consequuntur laboriosam a rerum? Inventore officiis ratione iure sequi suscipit dolores voluptatibus, exercitationem
-                            quos odio.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+
 </body>
 
 </html>
