@@ -1,0 +1,7 @@
+>> https://www.thaihometown.com/
+    Useful: มีประโยชน์ [Y]
+    Usable: ใช้งานง่าย [N]
+    Findable: หาสิ่งที่ต้องการได้ง่าย [Y]
+    Credible: น่าเชื่อถือ [Y]
+    Desirable: น่าใช้ [N]
+    Accessible: เข้าถึงได้ง่าย [Y]
